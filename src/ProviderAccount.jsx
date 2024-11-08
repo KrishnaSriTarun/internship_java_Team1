@@ -25,7 +25,7 @@ function ProviderAccount() {
                                           <button type="submit" className="btn btn-primary w-100 rounded-pill mt-4">Login</button>
                                     </form>
                                     <p className="text-center mt-3">
-                                          Don`t have an account? <Link to="/provider-login" className="text-primary">Register</Link>
+                                    Do you have an account? <Link to="/provider-login" className="text-primary">Login</Link>
                                     </p>
                               </div>
                         </div>
