@@ -1,13 +1,13 @@
 import "./Login.css";
-
+import { Link } from 'react-router-dom';
 function ProviderLogin() {
       return (
-            <div className="container-fluid vh-100 d-flex align-items-center justify-content-center p-5">
+            <div className="container-fluid vh-100 d-flex align-items-center justify-content-center">
                   <div className="row card-container rounded-5">
                         <div className="col-md-6 p-0">
                               <img src="image.png" alt="Earth from space" className="full-width-image rounded-start-5" />
                         </div>
-                        <div className="col-md-6 d-flex align-items-center justify-content-center">
+                        <div className="col-md-6 d-flex align-items-center justify-content-center p-5">
                               <div className="login-card p-4">
                                     <h2 className="text-primary">Provider Login</h2>
                                     <form>
@@ -22,7 +22,7 @@ function ProviderLogin() {
                                           <button type="submit" className="btn btn-primary w-100 rounded-pill mt-4">Login</button>
                                     </form>
                                     <p className="text-center mt-3">
-                                          Don`t have an account? <a href="#" className="text-primary">Register</a>
+                                          Don`t have an account? <Link to="/provider-account" className="text-primary">Register</Link>
                                     </p>
                               </div>
                         </div>

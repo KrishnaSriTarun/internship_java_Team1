@@ -5,15 +5,13 @@
 }
 
 body {
-      /* height: 100vh; */
-      margin-top: 30px;
       background-color: rgb(40, 40, 40);
       color: white;
       font-family: Arial, sans-serif;
-      display: flex;
+      /* display: flex;
       align-items: center;
-      justify-content: center;
-      /* overflow: hidden; */
+      justify-content: center; */
+      overflow: hidden;
 }
 
 .row {
@@ -27,7 +25,7 @@ body {
 }
 .full-width-image {
       width: 100%;
-      /* height: 100%; */
+      height: 100%;
       object-fit: cover;
 }
 
@@ -54,6 +52,7 @@ body {
 }
 .card-container{
       background: linear-gradient(to right, rgb(31, 31, 31) 50%, rgb(109, 109, 109) 100%);
+      margin: 13rem;
 }
 .input{
       width: 400px;

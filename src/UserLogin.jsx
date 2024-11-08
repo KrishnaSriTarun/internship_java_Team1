@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom';
+
 function UserLogin() {
       return (
-            <div className="container-fluid vh-100 d-flex align-items-center justify-content-center p-5">
+            <div className="container-fluid vh-100 d-flex align-items-center justify-content-center custom-negative-margin">
                   <div className="row card-container rounded-5">
                         <div className="col-md-6 p-0">
                               <img src="image.png" alt="Earth from space" className="full-width-image rounded-start-5" />
                         </div>
-                        <div className="col-md-6 d-flex align-items-center justify-content-center">
+                        <div className="col-md-6 d-flex align-items-center justify-content-center p-5">
                               <div className="login-card p-4">
                                     <h2 className="text-primary">User Login</h2>
                                     <form>
@@ -15,12 +17,12 @@ function UserLogin() {
                                           </div>
                                           <div className="mb-3">
                                                 <label htmlFor="password" className="form-label">Password</label>
-                                                <input type="password" id="password" className="form-control rounded-pill input " />
+                                                <input type="password" id="password" className="form-control rounded-pill input" />
                                           </div>
                                           <button type="submit" className="btn btn-primary w-100 rounded-pill mt-4">Login</button>
                                     </form>
                                     <p className="text-center mt-3">
-                                          Don`t have an account? <a href="#" className="text-primary">Register</a>
+                                          Don’t have an account? <Link to="/user-account" className="text-primary">Register</Link>
                                     </p>
                               </div>
                         </div>

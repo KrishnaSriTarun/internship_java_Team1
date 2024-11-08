@@ -1,4 +1,4 @@
-import "./Login.css";
+import { Link } from 'react-router-dom';
 
 function Network() {
       return (
@@ -14,12 +14,12 @@ function Network() {
                                     <div className="container">
                                           <div className="row">
                                                 <div className="buttons">
-                                                      <form method="get" action="/">
+                                                      <Link to="/provider-login">
                                                             <button className="btn btn-primary">Network Provider</button>
-                                                      </form>
-                                                      <form method="get" action="/">
-                                                            <button className="btn btn-primary">Admin</button>
-                                                      </form>
+                                                      </Link>
+                                                      <Link to="/user-login">
+                                                            <button className="btn btn-primary">User Login</button>
+                                                      </Link>
                                                 </div>
                                           </div>
                                     </div>
