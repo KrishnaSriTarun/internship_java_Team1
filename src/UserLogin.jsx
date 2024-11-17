@@ -13,13 +13,13 @@ function UserLogin() {
                                     <form>
                                           <div className="mb-3">
                                                 <label htmlFor="email" className="form-label">Email</label>
-                                                <input type="email" id="email" className="form-control rounded-pill input" />
+                                                <input type="email" id="email" required className="form-control rounded-pill input" />
                                           </div>
                                           <div className="mb-3">
                                                 <label htmlFor="password" className="form-label">Password</label>
-                                                <input type="password" id="password" className="form-control rounded-pill input" />
+                                                <input type="password" id="password" required className="form-control rounded-pill input" />
                                           </div>
-                                          <button type="submit" className="btn btn-primary w-100 rounded-pill mt-4">Login</button>
+                                          <Link to="/user-dashboard" className="text-primary"><button type="submit" className="btn btn-primary w-100 rounded-pill mt-4">Login</button></Link>
                                     </form>
                                     <p className="text-center mt-3">
                                           Don’t have an account? <Link to="/user-account" className="text-primary">Register</Link>
