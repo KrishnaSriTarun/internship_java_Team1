@@ -11,6 +11,8 @@ import UserLogin from './UserLogin';
 import Navbar from './Navbar';
 import UserDashBoard from './UserDashBoard';
 import AdminDashBoard from './AdminDashBoard';
+import NewCustomerForm from './NewForm';
+import UpdateForm from './UpdateForm';
 
 function App() {
   return (
@@ -23,8 +25,7 @@ function App() {
 function Layout() {
   const location = useLocation();
 
-  // List of routes where Navbar should not be displayed
-  const hideNavbarRoutes = ['/user-dashboard','/admin-dashboard'];
+  const hideNavbarRoutes = ['/user-dashboard','/admin-dashboard',"/new-form","/update-form"];
 
   return (
     <>
@@ -37,6 +38,8 @@ function Layout() {
         <Route path="/user-account" element={<UserAccount />} />
         <Route path="/user-dashboard" element={<UserDashBoard />} />
         <Route path="/admin-dashboard" element={<AdminDashBoard />} />
+        <Route path="/new-form" element={<NewCustomerForm />} />
+        <Route path="/update-form" element={<UpdateForm />} />
       </Routes>
     </>
   );
