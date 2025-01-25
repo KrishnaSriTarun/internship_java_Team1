@@ -13,6 +13,7 @@ import UserDashBoard from './UserDashBoard';
 import AdminDashBoard from './AdminDashBoard';
 import NewCustomerForm from './NewForm';
 import UpdateForm from './UpdateForm';
+import Report from './Report';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
 function Layout() {
   const location = useLocation();
 
-  const hideNavbarRoutes = ['/user-dashboard','/admin-dashboard',"/new-form","/update-form"];
+  const hideNavbarRoutes = ['/user-dashboard','/admin-dashboard',"/new-form","/update-form","/report"];
 
   return (
     <>
@@ -40,6 +41,7 @@ function Layout() {
         <Route path="/admin-dashboard" element={<AdminDashBoard />} />
         <Route path="/new-form" element={<NewCustomerForm />} />
         <Route path="/update-form" element={<UpdateForm />} />
+        <Route path="/report" element={<Report/>} />
       </Routes>
     </>
   );

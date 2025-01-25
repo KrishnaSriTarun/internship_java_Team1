@@ -5,6 +5,7 @@ import EditNoteSharpIcon from '@mui/icons-material/EditNoteSharp';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom';
 function AdminDashBoard() {
       return (
             <>
@@ -25,11 +26,17 @@ function AdminDashBoard() {
                                           </div>
                                           <div className="menu-item fs-5">
                                                 <EditNoteSharpIcon sx={{ fontSize: '40px' }} />
-                                                <span>Requests</span>
+                                                {/* <Link className='request' to="/report"> */}
+                                                      <span>Request</span>
+                                                {/* </Link> */}
                                           </div>
                                           <div className="menu-item fs-5">
-                                                <CurrencyRupeeIcon sx={{ fontSize: '30px' }} />
-                                                <span>Amount</span>
+                                                {/* <form action='' method='post'> */}
+                                                      <CurrencyRupeeIcon sx={{ fontSize: '30px' }} />
+                                                      <Link className='request' to="/report">
+                                                      <span>Amount</span>
+                                                      </Link>
+                                                {/* </form> */}
                                           </div>
                                           <div className="menu-item fs-5">
                                                 <HelpOutlineOutlinedIcon sx={{ fontSize: '30px' }} />
