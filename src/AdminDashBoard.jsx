@@ -26,17 +26,15 @@ function AdminDashBoard() {
                                           </div>
                                           <div className="menu-item fs-5">
                                                 <EditNoteSharpIcon sx={{ fontSize: '40px' }} />
-                                                {/* <Link className='request' to="/report"> */}
+                                                <Link className='request' to="/paypage">
                                                       <span>Request</span>
-                                                {/* </Link> */}
+                                                </Link>
                                           </div>
                                           <div className="menu-item fs-5">
-                                                {/* <form action='' method='post'> */}
                                                       <CurrencyRupeeIcon sx={{ fontSize: '30px' }} />
                                                       <Link className='request' to="/report">
                                                       <span>Amount</span>
                                                       </Link>
-                                                {/* </form> */}
                                           </div>
                                           <div className="menu-item fs-5">
                                                 <HelpOutlineOutlinedIcon sx={{ fontSize: '30px' }} />

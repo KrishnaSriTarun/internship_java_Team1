@@ -14,6 +14,7 @@ import AdminDashBoard from './AdminDashBoard';
 import NewCustomerForm from './NewForm';
 import UpdateForm from './UpdateForm';
 import Report from './Report';
+import PayPage from './PayPage';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
 function Layout() {
   const location = useLocation();
 
-  const hideNavbarRoutes = ['/user-dashboard','/admin-dashboard',"/new-form","/update-form","/report"];
+  const hideNavbarRoutes = ['/user-dashboard','/admin-dashboard',"/new-form","/update-form","/report",'/paypage'];
 
   return (
     <>
@@ -42,6 +43,7 @@ function Layout() {
         <Route path="/new-form" element={<NewCustomerForm />} />
         <Route path="/update-form" element={<UpdateForm />} />
         <Route path="/report" element={<Report/>} />
+        <Route path="/paypage" element={<PayPage/>} />
       </Routes>
     </>
   );
