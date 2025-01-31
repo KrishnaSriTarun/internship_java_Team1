@@ -1,7 +1,7 @@
 
 import './PayPage.css'
 
-const payPage = () => {
+function payPage() {
 
 
       return (

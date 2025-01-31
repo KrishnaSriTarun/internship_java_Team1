@@ -3,8 +3,7 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, } from "chart.js";
 import './Report.css'
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
-
-const CableNetworkDashboard = () => {
+function CableNetworkDashboard() {
       // eslint-disable-next-line no-unused-vars
       const [paidData, setPaidData] = useState([200, 1400, 1200]);
       // eslint-disable-next-line no-unused-vars

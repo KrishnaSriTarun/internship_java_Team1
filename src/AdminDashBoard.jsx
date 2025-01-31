@@ -38,7 +38,9 @@ function AdminDashBoard() {
                                           </div>
                                           <div className="menu-item fs-5">
                                                 <HelpOutlineOutlinedIcon sx={{ fontSize: '30px' }} />
-                                                <span>Help</span>
+                                                <Link className='request' to="/help">
+                                                      <span>Help</span>
+                                                </Link>
                                           </div>
                                     </div>
                                     <div>
