@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import "./Login.css";
 
 function UserLogin() {
       return (
@@ -7,7 +8,7 @@ function UserLogin() {
                         <div className="col-md-6 p-0">
                               <img src="image.png" alt="Earth from space" className="full-width-image rounded-start-5" />
                         </div>
-                        <div className="col-md-6 d-flex align-items-center justify-content-center p-5">
+                        <div className="col-md-6 d-flex align-items-center justify-content-center">
                               <div className="login-card p-4">
                                     <h2 className="text-primary">User Login</h2>
                                     <form>

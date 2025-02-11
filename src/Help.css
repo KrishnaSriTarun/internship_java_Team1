@@ -1,55 +1,121 @@
-.help-button{
+.help-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding: 20px; */
+      flex-direction: column;
+      width: 100%;
+}
+
+.report {
+      /* width: 0%; */
+      /* max-width: 800px; */
+      background-color: #2f82e8;
+      /* padding: 20px; */
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-report {
+      width: 150px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      margin-top: 50px;
+}
+
+.report-background {
+      text-align: center;
+}
+
+.help-button,
+.done-button {
+      display: block;
+      width: 100%;
+      max-width: 250px;
+      margin: 10px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+}
+
+.help-button {
       background-color: white;
       color: black;
 }
-.help-button:hover{
+
+.help-button:hover {
       background-color: #f1f1f1;
 }
-.details-section{
+
+.details-section {
       background-color: rgb(34, 105, 235);
       color: white;
       width: 100%;
       border-radius: 12px;
-      padding: 30px;
-}
-tbody{
-      background-color: white;
-      color: black;
-      border-radius: 25px;
       padding: 20px;
-}
-table{
-      margin-bottom: 30px;
+      overflow-x: auto;
 }
 
-th, td {
-      padding: 15px 20px;
+table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      border: none;
+}
+
+th,
+td {
+      padding: 12px;
       text-align: center;
       font-weight: bold;
+      /* border: 1px solid white; */
+      /* background-color: #f1f1f1; */
 }
 
-tr {
-      border-radius: 12px;
-      overflow: hidden; 
+tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.2);
 }
 
-tbody tr:first-child td:first-child {
-      border-top-left-radius: 12px;
-}
-
-tbody tr:first-child td:last-child {
-      border-top-right-radius: 12px;
-}
-
-tbody tr:last-child td:first-child {
-      border-bottom-left-radius: 12px;
-}
-
-tbody tr:last-child td:last-child {
-      border-bottom-right-radius: 12px;
-}
-.done-button{
+.done-button {
+      background-color: white;
       color: rgb(33, 171, 246);
       border-radius: 12px;
       padding: 10px 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+      .icon-report {
+            width: 80px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+      }
+
+      th,
+      td {
+            padding: 8px;
+            font-size: 14px;
+      }
+
+      .help-button,
+      .done-button {
+            font-size: 14px;
+            padding: 8px 16px;
+      }
+
+      .details-section {
+            padding: 15px;
+      }
+
+      .report {
+            width: 95%;
+      }
 }

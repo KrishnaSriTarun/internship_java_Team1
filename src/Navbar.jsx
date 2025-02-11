@@ -5,7 +5,8 @@ import LiveTvIcon from '@mui/icons-material/LiveTv';
 
 function Navbar() {
       return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-light bg-primary mb-lg-0">
+
                   <div className="container-fluid">
                   <Link className="navbar-brand text-white" to="/">
                               <LiveTvIcon style={{ fontSize: '2.5rem',marginLeft:'5rem' }} /> 

@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import './NewCustomerForm.css'; // Import the CSS file
+import './NewForm.css'; 
 
 function NewCustomerForm() {
       const [formData, setFormData] = useState({

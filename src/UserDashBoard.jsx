@@ -26,7 +26,7 @@ function UserDashBoard() {
                                     </div>
                               </div>
                               <div className="col-md-10">
-                                    <div className="col-md-2 dash-nav">
+                                    <div className=" dash-nav">
                                           <h4 className="text-secondary"><b>CABLE NETWORK</b></h4>
                                           <div className="position-relative">
                                                 <PersonIcon
@@ -38,10 +38,12 @@ function UserDashBoard() {
                                                             style={{
                                                                   position: 'absolute',
                                                                   top: '50px',
-                                                                  right: '10px',
+                                                                  right: '-5px',
                                                                   width: '150px',
                                                                   padding: '10px',
                                                                   zIndex: 1000,
+                                                                  backgroundColor: '#fff',
+                                                                  borderRadius: '12px',
                                                             }}
                                                       > 
                                                             <ul>
